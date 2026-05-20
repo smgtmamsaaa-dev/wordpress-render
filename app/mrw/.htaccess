@@ -1,0 +1,16 @@
+RewriteEngine On
+
+# Base path adjustment (useful for subdirectories like /app/MRWV3_Organized/)
+# RewriteBase /app/MRWV3_Organized/
+
+# Prevent directory listing
+Options -Indexes
+
+# Redirect requests to index.php if not a real file or directory
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php [L,QSA]
+
+# Prevent direct access to .php files
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^\ ]+)\.php
+RewriteRule ^ %1 [L,R=301]

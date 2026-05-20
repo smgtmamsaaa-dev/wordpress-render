@@ -1,0 +1,16 @@
+/* MRW Custom Styles */
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #1b224d; color: #333; }
+header { background: #141935; padding: 15px 0; border-bottom: 1px solid #eee; }
+.login { padding: 30px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); margin-top: -20px; }
+.btn { background-color: #e30613; color: #fff; border: none; padding: 9px 30px; border-radius: 5px; cursor: pointer; font-weight: bold; width: 100%; transition: 0.3s; }
+.btn:hover { background-color: #b3050f; color: #fff; }
+footer { background: #1b224d; padding: 50px 0; border-top: 1px solid #eee; margin-top: 50px; }
+.nav-item.active { font-weight: bold; color: #e30613; margin-bottom: 10px; }
+.nav-item { list-style: none; margin-bottom: 5px; color: #666; font-size: 14px; cursor: pointer; }
+.fotter { background: #333; color: #fff; padding: 20px 0; font-size: 12px; }
+.fotter .nav-item { color: #ccc; display: inline-block; margin-right: 15px; }
+
+/* Icons styling */
+.icon-mrw { color: #e30613; margin-right: 10px; }
+.form-group label { display: block; margin-bottom: 8px; font-weight: 600; }
+.form-control { width: 100%; padding: 7px; border: 2px solid #ddd; border-radius: 4px; box-sizing: border-box; }
